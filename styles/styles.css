@@ -10,12 +10,28 @@ h2  {
     color: green;
     font-size: 20px;
 }
+header{
+    background-color: gold;
+}
+main{
+    background-color: darkorange;
+}
+
 header p {
     font-weight: bold;
     font-style: italic;
     color: blue;
 }           
+footer{
+background-color: rgb(97, 218, 157);
+border: black solid thin;
+padding-left: 5px;
+border-radius: 8px;
 
+}
+figure.left {
+    float: left;
+}
 .red-heading{
     color: red;
 }
