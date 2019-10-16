@@ -43,3 +43,8 @@ figure.left {
 #new-font{
     font-family: fantasy;
 }
+
+.fit-picture {
+    width: 250px;
+    height: 250px;
+}
