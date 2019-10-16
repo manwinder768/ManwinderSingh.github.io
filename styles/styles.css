@@ -16,7 +16,10 @@ header{
 main{
     background-color: darkorange;
 }
-
+.fit-picture {
+    width: 250px;
+    height: 250px;
+}
 header p {
     font-weight: bold;
     font-style: italic;
@@ -44,7 +47,3 @@ figure.left {
     font-family: fantasy;
 }
 
-.fit-picture {
-    width: 250px;
-    height: 250px;
-}
