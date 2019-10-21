@@ -65,3 +65,6 @@ figure.left {
     font-family: fantasy;
 }
 
+p.clear{
+    clear: both;
+}
