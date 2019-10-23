@@ -68,3 +68,24 @@ figure.left {
 p.clear{
     clear: both;
 }
+
+.btn-padding {
+    padding: 25px; 
+    border-radius: 22px;
+    border-width: 10px;
+    border-color: blue;
+    border-style: double;
+}
+
+.btn-padding:hover {
+    background-color: red;
+    border-color: white;
+}                   
+        
+    .btn-margin-padding{
+        margin: 25px;
+        border: thin;
+    }
+.btn-margin-padding:active {
+    color: red;
+}                          
