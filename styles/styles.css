@@ -1,5 +1,17 @@
 body {
     background-color:aquamarine;
+    max-width: 500px;
+    margin: auto;
+}
+aside {        
+    background-color: bisque;
+    border: black 1px solid;
+    border-radius: 8px;
+    float: right;
+    font-style: italic;
+    margin-right: 5px;
+    padding: 8px;
+    width: 33%;        
 }
 h1{
     color: blue;
@@ -84,8 +96,20 @@ p.clear{
         
     .btn-margin-padding{
         margin: 25px;
-        border: thin;
+        padding-left: 30px;
+        padding-right:30px;
+        border: 15px green;
+        border-style: ridge;
     }
 .btn-margin-padding:active {
-    color: red;
+    background-color: red;
+    
 }                          
+ #button-wrapper{
+     background-color: aquamarine;
+     display: inline-block;
+            border: thin black solid;
+ }
+ 
+
+ 
