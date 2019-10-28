@@ -3,6 +3,8 @@ const myFirstNumericVariable = 3;
 const myBoolean = true;
 const myNull = null;
 let myUndefined;
+
+myUndefined = "Learning more Javascript";
 var oldStyle = "This is the way we used to do it.";
 let newChangableStyle = "This allows you to declare a variable that can be changed.";
 const constantVariable = "This variable can not be changed. Except..";
