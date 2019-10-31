@@ -1,0 +1,9 @@
+body{
+    background-color: turquoise;
+}
+footer{
+    background-color: red;
+    border: black solid thin;
+padding-left: 5px;
+border-radius: 8px;
+}

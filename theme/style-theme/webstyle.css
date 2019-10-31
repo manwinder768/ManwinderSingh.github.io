@@ -1,0 +1,24 @@
+body{
+    background-color: springgreen;
+}
+header{
+    font-size:20px ;
+    font-style: italic;
+}
+footer{
+    background-color: tomato;
+    border: black solid thin;
+padding-left: 5px;
+border-radius: 8px;
+clear:both;
+}
+h1{
+    background-color: violet;
+}
+figure.right{
+    float:right;
+}
+
+figure.left{
+    float:left;
+}

@@ -1,0 +1,53 @@
+body{
+    background-color: bisque;
+
+}
+aside {        
+    background-color:cornflowerblue;
+    border: black 1px solid;
+    border-radius: 8px;
+    float: left;
+    font-style: italic;
+    margin-right: 5px;
+    padding: 8px;
+    width: 33%;   
+}
+h1{
+    color:red;
+    font-size: 25px;
+}
+
+h2  {
+    color:darkolivegreen;
+    font-size: 20px;
+}
+header{
+    background-color: gold;
+    font-size: 30px;
+}
+figure.left {
+    float: left;
+   
+}
+figure.right {
+    float: right;
+}
+
+    main{
+        background-color: darkorange;
+    }
+
+footer{
+    background-color: rgb(97, 218, 157);
+    border: black solid thin;
+    padding-left: 5px;
+    border-radius: 8px;
+    clear:both;
+    }
+p.clear{
+    clear:both;
+    }
+
+h2.clear{
+    clear:both;
+    }
