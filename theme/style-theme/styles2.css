@@ -1,7 +1,8 @@
 body{
     background-color: bisque;
-
+    clear: both;
 }
+
 aside {        
     background-color:cornflowerblue;
     border: black 1px solid;
@@ -12,29 +13,36 @@ aside {
     padding: 8px;
     width: 33%;   
 }
+
 h1{
     color:red;
     font-size: 25px;
 }
 
 h2  {
-    color:darkolivegreen;
+    color:rgb(75, 47, 107);
     font-size: 20px;
+    clear: both;
 }
+
 header{
     background-color: gold;
     font-size: 30px;
 }
+
 figure.left {
     float: left;
-   
-}
-figure.right {
-    float: right;
+   clear : both;
 }
 
-    main{
-        background-color: darkorange;
+figure.right {
+    float: right;
+    clear: both;
+}
+
+main{
+     background-color: darkorange;
+     clear: both;
     }
 
 footer{
@@ -44,6 +52,7 @@ footer{
     border-radius: 8px;
     clear:both;
     }
+
 p.clear{
     clear:both;
     }

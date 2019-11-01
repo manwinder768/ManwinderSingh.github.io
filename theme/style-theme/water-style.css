@@ -1,9 +1,26 @@
 body{
     background-color: turquoise;
+    clear : both;
 }
 footer{
     background-color: red;
     border: black solid thin;
 padding-left: 5px;
 border-radius: 8px;
+clear : both;
+}
+
+h1{
+    color:red;
+    font-size: 25px;
+}
+
+figure.left {
+    float: left;
+   clear : both;
+}
+
+figure.right {
+    float: right;
+    clear: both;
 }

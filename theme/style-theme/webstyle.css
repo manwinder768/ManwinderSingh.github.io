@@ -22,3 +22,8 @@ figure.right{
 figure.left{
     float:left;
 }
+h2  {
+    color:darkolivegreen;
+    font-size: 20px;
+    clear: both;
+}
