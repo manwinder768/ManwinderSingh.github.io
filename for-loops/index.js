@@ -14,6 +14,8 @@ window.onload = () => {
 
             elfCode.appendToList(myList, 1);
             elfCode.appendToList(myList, 2);
+            elfCode.appendToList(myList, 3);
+            
             
     }
 }
