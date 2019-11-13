@@ -1,31 +1,37 @@
+window.onload = () => {
+    const simpleFunctionDisplay = document.getElementById('simpleFunctionDisplay');
+    const functionCallsAction = document.getElementById('functionCallsAction');
+    const functionParametersDisplay = document.getElementById('functionParameterDisplay');
 
-function simpleFunction(){
-    console.log('functions should consist of statements designed to perform a single task.')
-}
+    functionCallsAction.onclick = simpleFunction;
+    
+    function simpleFunction(){
+    console.log('functions should consist of statements designed to perform a single task.');
+    simpleFunctionDisplay.textContent = "some other text.";
+    }
+    function functionParameters(){
+        console.log(name);
+        functionParametersDisplay.textContent ="Many functions take parameters.";
+    }
+
+    
 
 function functionParameters(name){
 console.log(name);
 }
 
 function functionReturn(){
-console.log('Many functions return values.');
+return "Many functions return values.";
 }
 
-simpleFunction();
+//simpleFunction();
+
 functionParameters("Many functions take parameters.");
-functionReturn();
 
-window.onload = () => {
-    const simpleFunctionDisplay = document.getElementById('simpleFunctionDisplay');
-const functionCallsAction = document.getElementById('functionCallsAction');
-}
+const returnValue = functionReturn();
+console.log(returnValue);
 
-function simple() {
-    console.log('simple');
-    simpleFunctionDisplay.textContent = "simple";
-}
 
-functionCallsAction.onclick = simple;
 
 
 const elfCode = {
@@ -43,3 +49,4 @@ someAction.onclick = function() {
     elfCode.appendToList(listDisplay);
 }
 
+}
