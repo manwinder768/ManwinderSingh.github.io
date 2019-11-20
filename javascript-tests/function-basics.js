@@ -2,27 +2,33 @@ window.onload = () => {
     const simpleFunctionDisplay = document.getElementById('simpleFunctionDisplay');
     const functionCallsAction = document.getElementById('functionCallsAction');
     const functionParametersDisplay = document.getElementById('functionParameterDisplay');
-    const functionReturnDisplay = document.getElementById('functionReturnDsiplay');
+    //const functionReturnDisplay = document.getElementById('functionReturnDsiplay');
 
-    functionCallsAction.onclick = simpleFunction;
+    functionCallsAction.onclick = function(){
+        simpleFunction();
+        
+    }
     function simpleFunction(){
-    console.log('functions should consist of statements designed to perform a single task.');
+    console.log("functions should consist of statements designed to perform a single task.");
     simpleFunctionDisplay.textContent = "functions should consist of statements designed to perform a single task.";
     }
     
 
-    functionCallsAction.onclick = functionParameters;
+    functionCallsAction.onclick = function(){
+        functionParameters();
+    }
+        
     function functionParameters(){
-    console.log('Many functions take parameters.');   
+    console.log("Many functions take parameters.");   
     functionParametersDisplay.textContent = "Many functions take parameters.";
     }
     
-    functionCallsAction.onclick = functionReturn;
+    //functionCallsAction.onclick = functionReturn;
     function functionReturn(){
     return "Many functions return values.";
     const returnValue = functionReturn();
     console.log(returnValue);
-    functionReturnDisplay.textContent = returnValue;
+    //functionReturnDisplay.textContent = returnValue;
     }
 
 const elfCode = {
