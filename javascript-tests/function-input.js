@@ -50,9 +50,9 @@ const milesToFeet = (miles) => {
 };
 
 const areaOfTriangle = (base, height) => {
-    return area = base * height;
+    return base * height;
 };
 
 const areaOfCircle = (radius) => {
     return Math.PI * radius * radius;
-}
+};
