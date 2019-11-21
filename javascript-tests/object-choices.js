@@ -5,9 +5,11 @@ window.onload = () => {
     
     const simpleObject = {
         firstName: 'James',
+        middleName: 'barfoo',
         lastName: 'Watson',
+
         sayName: function () {
-            const fullName = this.firstName + " " + this.lastName;
+            const fullName = "Get Full Name:   " + this.firstName + " " + this.middleName+ " " + this.lastName;
            // console.log(fullName);
             simpleObjectDisplay.textContent = fullName;
             }
@@ -23,22 +25,32 @@ window.onload = () => {
 
     function FunctionObject() {
         FunctionObject.prototype.sayName = function () {
-            console.log('Function Object');
+            //console.log('Function Object');
+             functionObjectDisplay.textContent = "Constructor Function Full Name : Rosalind Franklin";
         }
     };
+    functionObjectAction.onclick = function(){
+        functionObject.sayName();
+    }
 
     class CustomClass {
         sayName() {
             console.log('Custom Class');
+            customClassDisplay.textContent = "Custom Class Full Name: Francis Crick";
         }
     };
+
+    customClassAction.onclick = function(){
+        customClass.sayName();
+
+    }
 
     const functionObject = new FunctionObject();
     const customClass = new CustomClass();
     //simpleObject.sayName();
     simpleObject.dynamicMethod();
-    functionObject.sayName();
-    customClass.sayName();
+   // functionObject.sayName();
+    //customClass.sayName();
 
 
 
