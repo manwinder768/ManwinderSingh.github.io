@@ -22,10 +22,13 @@ window.onload = () => {
         document.getElementById('areaOfTriangleAction');
 
         areaOfTriangleAction.onclick = () => {
-        const areaOfTriangleInput = document.getElementById('areaOfTriangleInput');
+        const areaOfTriangleBaseInput = document.getElementById('areaOfTriangleBaseInput');
+        const areaOfTriangleHeightInput = document.getElementById('areaOfTriangleHeightInput');
+
         const areaOfTriangleDisplay = document.getElementById('areaOfTriangleDisplay');
         
-        areaOfTriangleDisplay.textContent = areaOfTriangle(areaOfTriangleInput.value);
+        areaOfTriangleDisplay.textContent = areaOfTriangle(areaOfTriangleBaseInput.value);
+        areaOfTriangleDisplay.textContent = areaOfTriangle(areaOfTriangleHeightInput.value);
     };
     const areaOfCircleAction = 
         document.getElementById('areaOfCircleAction');
