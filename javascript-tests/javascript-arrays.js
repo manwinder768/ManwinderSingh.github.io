@@ -16,10 +16,46 @@ window.onload = () => {
 
     arrays.numbers.sort((a, b) => a - b);
 
-    numbersAction.onclick= () => {
-    for (let number of arrays.numbers) {
-        console.log(number);
-        elfCode.appendToList(numbersDisplay, number);
+    numbersAction.onclick = () => {
+        for (let number of arrays.numbers) {
+            console.log(number);
+            elfCode.appendToList(numbersDisplay, number);
+        }
     }
+
+    const languageNameAction = document.getElementById("languageNameAction");
+    const languageNameDisplay = document.getElementById("languageNameDisplay");
+
+    const newArray = {
+        languages: ['JavaScript', 'HTML', 'CSS', 'Java', 'C#', 'Python', 'C/C++']
+    };
+
+    newArray.languages.sort();
+
+    languageNameAction.onclick = () => {
+        for (let language of newArray.languages) {
+            console.log(language);
+            elfCode.appendToList(languageNameDisplay, language);
+        }
     }
+
+    const languagePopularityAction = document.getElementById("languagePopularityAction");
+    const languagePopularityDisplay = document.getElementById("languagePopularityDisplay");
+
+    var languagePolularity = [
+        {
+            language: 'JavaScript',
+            rank: 1
+        },
+        {
+            language: 'HTML',
+            rank: 2
+        },
+        {
+            language: 'CSS',
+            rank: 3
+        }
+    ];
+    
+
 }
