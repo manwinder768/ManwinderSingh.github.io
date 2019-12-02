@@ -42,7 +42,7 @@ window.onload = () => {
     const languagePopularityAction = document.getElementById("languagePopularityAction");
     const languagePopularityDisplay = document.getElementById("languagePopularityDisplay");
 
-    var languagePolularity = [
+    const languagePopularity = [
         {
             language: 'JavaScript',
             rank: 1
@@ -56,6 +56,23 @@ window.onload = () => {
             rank: 3
         }
     ];
+  languagePopularity.sort(compareRank);
+function compareRank(a, b) {
+    const rankA = a.rank;
+   const rankB = b.rank;
+
+   let comparison = 0;
+   if (rankA > rankB) {
+       comparison = 1;
+   } else if (rankA < rankB) {
+       comparison = -1;
+   }
+   return comparison;
+}
     
+    languagePopularityAction.onclick = () => {
+        console.log(languagePopularity);
+       elfCode.appendToList(languagePopularityDisplay, languagePopularity)
+    }
 
 }
